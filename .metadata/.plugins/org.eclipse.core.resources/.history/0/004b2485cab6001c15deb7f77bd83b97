@@ -1,0 +1,22 @@
+package ista.edu.componente;
+
+public class Componente_implementacion implements componente_dependencia{
+
+	@Override
+	public void visualizar_resultado(String valor) {
+		System.out.println("el resultado es_"+ valor);
+	}
+
+	@Override
+	public int leer_valor() {
+		
+		return 0;
+	}
+
+	@Override
+	public String suma(int a, int b) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

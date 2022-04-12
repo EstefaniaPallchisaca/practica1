@@ -1,0 +1,7 @@
+package ista.edu.componente;
+
+public interface componente_dependencia {
+	void visualizar_resultado (String valor);
+	int leer_valor();
+    String suma(int a , int b);
+}

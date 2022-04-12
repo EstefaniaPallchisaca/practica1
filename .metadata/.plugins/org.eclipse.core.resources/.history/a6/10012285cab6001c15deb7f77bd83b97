@@ -1,0 +1,5 @@
+package ista.edu.componente;
+
+public interface componente_dependencia {
+
+}

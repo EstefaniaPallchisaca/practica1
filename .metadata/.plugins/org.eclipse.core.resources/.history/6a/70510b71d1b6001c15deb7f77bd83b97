@@ -1,0 +1,6 @@
+package ista.edu.sistema1_component;
+
+public interface Component_Dependencia {
+void saludar (String mensaje);
+String leer_nombre();
+}

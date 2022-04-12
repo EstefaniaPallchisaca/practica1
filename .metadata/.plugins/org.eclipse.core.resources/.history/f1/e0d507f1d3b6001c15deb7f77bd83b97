@@ -1,0 +1,31 @@
+package ista.edu.sistema1;
+
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import ista.edu.sistema1_component.Component_Dependencia;
+
+@SpringBootApplication
+public class Sistema1Application implements CommandLineRunner{
+
+	public Component_Dependencia component_Dependencia;
+	
+	public Sistema1Application(Component_Dependencia component_Dependencia) {
+		this.component_Dependencia = component_Dependencia;
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(Sistema1Application.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+	int a= component_Dependencia.leer_numeros();
+	int b= component_Dependencia.leer_numeros();
+	component_Dependencia.visualizar_resultado(component_Dependencia.suma(a, b));
+		
+	}
+
+}
